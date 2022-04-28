@@ -1,0 +1,14 @@
+body {
+    background-image: url("images/Weather.jpg");
+}
+
+h1 {
+    padding-top: 12rem;
+    text-align: center;
+    font-family: 'Water Brush', cursive;
+    font-size: 10rem;
+}
+
+form{
+    text-align: center;
+}
