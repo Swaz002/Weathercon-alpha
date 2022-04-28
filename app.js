@@ -4,14 +4,16 @@ const express = require("express");
 const https = require("https");
 //adding the bodyParser modue
 const bodyParser = require("body-parser");
+const { link } = require("fs");
 //adding the express module in app
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static(__dirname + "/public"));
 
 //to fix the get values in the server homepage
 app.get("/", function(req, res) {
-        res.sendFile(__dirname + "/index.html");
+        res.sendFile(__dirname + "/index.html");        
         });
 
 app.post("/", function(req, res) {
