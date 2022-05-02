@@ -40,13 +40,13 @@ app.post("/", function(req, res) {
                //there can only be one res.send
               res.write("<p>The weather is currently " + WeatherDescription + "</p>");
                console.log("temp = " + temp);
-              res.write("<h1>The temperature in " + place + " is " + temp + " degree Celcius<h1>");
+              res.write("<h1>The temperature in " + query + " is " + temp + " degree Celcius<h1>");
                res.write("<img src=" + imgURL + ">");
     });
 });
 })
 
 
-app.listen(3000, function() {
+app.listen(process.env.PORT, function() {
     console.log("server online at port 3000 ...");
 });

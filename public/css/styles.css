@@ -12,3 +12,13 @@ h1 {
 form{
     text-align: center;
 }
+
+input {
+    width: 20%;
+    height: 2.5rem;
+}
+
+button {
+    width: 4rem;
+    margin-bottom: 0.3rem;
+}
